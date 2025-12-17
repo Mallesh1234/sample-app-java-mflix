@@ -49,7 +49,7 @@ export default function MovieCard({ movie, isSelected = false, onSelectionChange
       <div className={movieStyles.moviePoster}>
         {movie.poster ? (
           <Image
-            src={movie.poster}
+            src="/{movie.poster}"
             alt={`${movie.title} poster`}
             fill
             sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 280px"
